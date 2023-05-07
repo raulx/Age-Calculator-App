@@ -27,7 +27,8 @@
     --primary-color:#F0F0F0;
     --secondary-color:#fff;
     --tertiary-color:#824FFA;
-    --smokey-gray:hsl(0, 1%, 44%)
+    --smokey-gray:hsl(0, 1%, 44%);
+    --light-red:#ff5757;
 }
 *,
 *::after,
@@ -112,19 +113,29 @@ body{
     flex-direction: column;
     gap: .8rem;
 }
-.user-input input{
+input{
     height: 6rem;
-    width: 12rem;
+    width: 13rem;
     border: 1px solid rgb(121, 121, 121,0.8);
     border-radius: .5rem;
     padding: 2rem;
     font-family: 'Poppins-Bold';
     font-size: 3.2rem;
 }
-.user-input input::placeholder{
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+}
+
+input::placeholder{
     font-family: "Poppins-ExtraBold";
 }
-.user-input input:focus{
+input:focus{
+    border:none;
     outline: 1px solid #824FFA;
 }
 .display__age{
@@ -137,4 +148,17 @@ body{
 }
 .display__age  span{
     color: #824FFA;
+}
+.validation{
+    visibility: hidden;
+    font-family: 'Poppins-BoldItalic';
+    letter-spacing: 0;
+}
+.error-outline{
+    border: 0;
+    outline: 1px solid var(--light-red);
+}
+.error{
+    visibility: visible;
+    color: var(--light-red);
 }

@@ -21,16 +21,37 @@
         <div class="date__input">
           <div class="date__input wrapper">
             <div class="user-input day">
-              <label for="id">Day</label>
-              <input id="day" type="text" placeholder="DD" required />
+              <label for="day">Day</label>
+              <input
+                name="day"
+                id="day_input"
+                type="number"
+                placeholder="DD"
+                required
+              />
+              <small class="validation day">This field is Required</small>
             </div>
             <div class="user-input month">
-              <label for="id">Month</label>
-              <input id="day" type="text" placeholder="MM" required />
+              <label for="month">Month</label>
+              <input
+                name="month"
+                id="month_input"
+                type="number"
+                placeholder="MM"
+                required
+              />
+              <small class="validation month">This field is Required</small>
             </div>
             <div class="user-input year">
-              <label for="id">year</label>
-              <input id="day" type="text" placeholder="YY" required />
+              <label for="year">year</label>
+              <input
+                name="year"
+                id="year_input"
+                type="number"
+                placeholder="YY"
+                required
+              />
+              <small class="validation year">This field is Required</small>
             </div>
           </div>
         </div>
@@ -42,7 +63,7 @@
         </div>
 
         <div class="display__age">
-          <p class="display"><span class="age year">38</span>years</p>
+          <p class="display"><span class="age years">--</span>years</p>
           <p class="display"><span class="age months">--</span>months</p>
           <p class="display"><span class="age days">--</span>days</p>
         </div>
