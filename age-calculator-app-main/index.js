@@ -61,11 +61,17 @@ year.addEventListener('input',(e)=>{
         fieldInput.classList.add('error-outline');
         noError = false;
     }
+    else if(year.value.length < 4){
+        errorMessageBox.innerText = 'Must be a valid year';
+        errorMessageBox.classList.add('error');
+        label.classList.add('error')
+        fieldInput.classList.add('error-outline');
+        noError = false;
+    }
     else{
-        // errorMessageBox.classList.remove('error');
-        // label.classList.remove('error');
-        // fieldInput.classList.remove('error-outline');
-        removeWholeError()
+        errorMessageBox.classList.remove('error');
+        label.classList.remove('error');
+        fieldInput.classList.remove('error-outline');
         noError = true;
     }
 })
@@ -81,10 +87,9 @@ month.addEventListener('input',(e)=>{
         noError = false;
     }
     else{
-        // errorMessageBox.classList.remove('error');
-        // label.classList.remove('error');
-        // fieldInput.classList.remove('error-outline');
-        removeWholeError()
+        errorMessageBox.classList.remove('error');
+        label.classList.remove('error');
+        fieldInput.classList.remove('error-outline');
         noError = true;
     }
 })
@@ -101,10 +106,9 @@ day.addEventListener('input',(e)=>{
         noError = false;
     }
     else{
-        // errorMessageBox.classList.remove('error');
-        // label.classList.remove('error');
-        // fieldInput.classList.remove('error-outline');
-        removeWholeError()
+        errorMessageBox.classList.remove('error');
+        label.classList.remove('error');
+        fieldInput.classList.remove('error-outline');
         noError = true;
     }
 })

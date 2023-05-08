@@ -170,7 +170,7 @@ input:focus{
 
 @media(max-width:1200px){
     html{
-        font-size: 55%;
+        font-size: 58%;
     }
     .btn{
         left: 70%;
@@ -179,7 +179,7 @@ input:focus{
 
 @media(max-width:900px){
     html{
-        font-size: 50%;
+        font-size: 54%;
     }
     .btn{
         left: 60%;
@@ -188,7 +188,7 @@ input:focus{
 
 @media(max-width:768px){
     html{
-        font-size: 45%;
+        font-size: 50%;
     }
     .btn{
         left: 50%;
@@ -197,7 +197,7 @@ input:focus{
 
 @media(max-width:600px){
     html{
-        font-size: 40%;
+        font-size: 46%;
     }
     .btn{
         left: 40%;
@@ -206,7 +206,7 @@ input:focus{
 
 @media(max-width:480px){
     html{
-        font-size: 35%;
+        font-size: 42%;
     }
     .btn{
         left: 30%;
@@ -215,7 +215,7 @@ input:focus{
 
 @media(max-width:320px){
     html{
-        font-size: 30%;
+        font-size: 38%;
     }
     .btn{
         left: 20%;
