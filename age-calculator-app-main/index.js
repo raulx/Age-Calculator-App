@@ -62,9 +62,10 @@ year.addEventListener('input',(e)=>{
         noError = false;
     }
     else{
-        errorMessageBox.classList.remove('error');
-        label.classList.remove('error');
-        fieldInput.classList.remove('error-outline');
+        // errorMessageBox.classList.remove('error');
+        // label.classList.remove('error');
+        // fieldInput.classList.remove('error-outline');
+        removeWholeError()
         noError = true;
     }
 })
@@ -80,9 +81,10 @@ month.addEventListener('input',(e)=>{
         noError = false;
     }
     else{
-        errorMessageBox.classList.remove('error');
-        label.classList.remove('error');
-        fieldInput.classList.remove('error-outline');
+        // errorMessageBox.classList.remove('error');
+        // label.classList.remove('error');
+        // fieldInput.classList.remove('error-outline');
+        removeWholeError()
         noError = true;
     }
 })
@@ -99,9 +101,10 @@ day.addEventListener('input',(e)=>{
         noError = false;
     }
     else{
-        errorMessageBox.classList.remove('error');
-        label.classList.remove('error');
-        fieldInput.classList.remove('error-outline');
+        // errorMessageBox.classList.remove('error');
+        // label.classList.remove('error');
+        // fieldInput.classList.remove('error-outline');
+        removeWholeError()
         noError = true;
     }
 })

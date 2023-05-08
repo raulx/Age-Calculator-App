@@ -49,8 +49,8 @@ body{
     overflow: hidden;
 }
 .container{
-    width:50%;
-    height:70%;
+    width:50rem;
+    height:60rem;
     background-color: var(--secondary-color);
     position: absolute;
     top: 50%;
@@ -95,7 +95,10 @@ body{
     background-color:#643cc2;
 
 }
-
+.btn img{
+    height: 4rem;
+    width: 4rem;
+}
 .date__input.wrapper{
     display: flex;
     align-items: center;
@@ -144,7 +147,7 @@ input:focus{
     flex-direction: column;
     letter-spacing: .2rem;
     gap: 1rem;
-    font-size: 6rem;
+    font-size: 7rem;
 }
 .display__age  span{
     color: #824FFA;
@@ -162,3 +165,60 @@ input:focus{
     visibility: visible;
     color: var(--light-red);
 }
+
+/* media queries for responsiveness*/
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .btn{
+        left: 70%;
+    }
+}
+
+@media(max-width:900px){
+    html{
+        font-size: 50%;
+    }
+    .btn{
+        left: 60%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    .btn{
+        left: 50%;
+    }
+}
+
+@media(max-width:600px){
+    html{
+        font-size: 40%;
+    }
+    .btn{
+        left: 40%;
+    }
+}
+
+@media(max-width:480px){
+    html{
+        font-size: 35%;
+    }
+    .btn{
+        left: 30%;
+    }
+}
+
+@media(max-width:320px){
+    html{
+        font-size: 30%;
+    }
+    .btn{
+        left: 20%;
+    }
+}
+
